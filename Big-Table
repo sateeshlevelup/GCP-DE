@@ -1,1 +1,18 @@
+Create a big-table instance and tables  with gcloud
 
+ -> Create a big table instance
+
+   gcloud bigtable instances create my-instance  --display-name=mynewcl   --cluster-config=id=my-cluster,zone=us-central1-a
+
+    optional arguments:-
+
+     -> cluster storage
+     -> autoscaling
+     -> key
+
+
+
+ -> gcloud bigtable instances tables create <table name> --instance=<instance-name> --project=:<project-name> --column-families=cf34
+ -> gcloud bigtable instances tables create <table name> --instance=<instance-name> --project=:<project-name> --column-families=cf34 --splits=10
+   
+   
