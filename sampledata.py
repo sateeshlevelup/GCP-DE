@@ -2,13 +2,13 @@ import csv
 import uuid
 from google.cloud import bigtable
 
-project_name = 'learngcp-pde'
-instance_name = 'vminstance-demo1'
-file = 'forestfires.csv'
+project_name = 'levelup-402407'
+instance_name = 'demo123'
+file = 'ff.csv'
 
 client = bigtable.Client(project=project_name, admin=True)
 instance = client.instance(instance_name)
-table = instance.table('fires')
+table = instance.table('demo123')
 rows = []
 
 with open(file) as fh:
