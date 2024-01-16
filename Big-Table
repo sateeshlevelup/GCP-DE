@@ -14,5 +14,32 @@ Create a big-table instance and tables  with gcloud
 
  -> gcloud bigtable instances tables create <table name> --instance=<instance-name> --project=:<project-name> --column-families=cf34
  -> gcloud bigtable instances tables create <table name> --instance=<instance-name> --project=:<project-name> --column-families=cf34 --splits=10
-   
+
+
+CBT:- 
+
+ -> Initialize gcloud
+
+     -> gcloud init
+
+-> install cbt
+
+     -> gcloud components install cbt 
+
+
+
+cbt createinstance <instance-id> <display-name> <cluster-id> <zone> <num-nodes> <storage type>
+
+Create a cbtrc configuration file and run the following commands
+
+echo project = levelup-402407 > ~/.cbtrc
+echo instance = demo123 > ~/.cbtrc
+cat ~/.cbtrc
+
+cbt createtable <table-name>
+cbt createtable <table-name> <family_name>
+cbt ls < instance name>
+cbt ls  <table name> 
+
+     
    
