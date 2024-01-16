@@ -1,4 +1,4 @@
-Create a big-table instance and tables  with gcloud
+  Create a big-table instance and tables  with gcloud
 
  -> Create a big table instance
 
@@ -40,6 +40,17 @@ cbt createtable <table-name>
 cbt createtable <table-name> <family_name>
 cbt ls < instance name>
 cbt ls  <table name> 
+
+
+cbt read demo123 start=2
+  cbt read demo123 start=2 end=10
+   cbt read demo123 start=2 end=34
+   cbt read demo123 start=2 end=34 prefix=3#6#
+   cbt read demo123  prefix=3#6#
+   cbt read demo123 columns=metric:area
+   cbt read demo123 columns=metric:area,rain
+   cbt read demo123 keys-only=true
+   cbt read demo123 keys-only=false
 
      
    
